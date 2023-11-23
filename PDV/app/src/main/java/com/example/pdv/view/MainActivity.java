@@ -1,8 +1,12 @@
-package com.example.pdv;
+package com.example.pdv.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.example.trabalhoprogramacaoandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 

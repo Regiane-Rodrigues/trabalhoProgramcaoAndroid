@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade"
+        android:layout_below="@+id/spinnerProdutos"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextValorUnitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor Unitário"
+        android:layout_below="@+id/editTextQuantidade"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonRegistrarVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Venda"
+        android:layout_below="@+id/editTextValorUnitario"
+        android:layout_marginLeft="200dp" />
+
+    <Button
+        android:id="@+id/buttonRegistrarVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Venda"
+        android:layout_below="@+id/editTextValorUnitario"
+        android:layout_marginRight="200dp" />
+
+</RelativeLayout>
