@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "trabalhoProgramacaoAndroid"
+rootProject.name = "PDV"
 include(":app")
+ 

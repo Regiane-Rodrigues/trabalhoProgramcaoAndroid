@@ -1,4 +1,4 @@
-package com.example.trabalhoprogramacaoandroid;
+package com.example.pdv;
 
 import org.junit.Test;
 
