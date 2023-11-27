@@ -3,44 +3,44 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <Spinner
-        android:id="@+id/spinnerProdutos"
+    <EditText
+        android:id="@+id/etIdVendas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp" />
+        android:hint="ID_VENDAS"/>
 
     <EditText
-        android:id="@+id/editTextQuantidade"
+        android:id="@+id/etProduto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Quantidade"
-        android:layout_below="@+id/spinnerProdutos"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp" />
+        android:layout_below="@id/etIdVendas"
+        android:layout_marginTop="16dp"
+        android:hint="PRODUTO"/>
 
     <EditText
-        android:id="@+id/editTextValorUnitario"
+        android:id="@+id/etQuantidade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Valor Unitário"
-        android:layout_below="@+id/editTextQuantidade"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_below="@id/etProduto"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:hint="QUANTIDADE"/>
+
+    <EditText
+        android:id="@+id/etValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuantidade"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:hint="VALOR_TOTAL"/>
 
     <Button
-        android:id="@+id/buttonRegistrarVenda"
+        android:id="@+id/btRegistrarVenda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar Venda"
-        android:layout_below="@+id/editTextValorUnitario"
-        android:layout_marginLeft="200dp" />
-
-    <Button
-        android:id="@+id/buttonRegistrarVenda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrar Venda"
-        android:layout_below="@+id/editTextValorUnitario"
-        android:layout_marginRight="200dp" />
+        android:layout_below="@id/etValorTotal"
+        android:layout_marginTop="16dp"
+        android:text="Registrar Venda"/>
 
 </RelativeLayout>

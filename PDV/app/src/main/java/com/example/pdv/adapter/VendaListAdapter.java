@@ -36,10 +36,10 @@ public class VendaListAdapter extends
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Venda vendaSelecionado = listaVenda.get(position);
-        holder.tvId_Vendas.setText(String.valueOf(VendaSelecionado.getId_Vendas()));
-        holder.tvProdutos.setText(VendaSelecionado.getProdutos());
-        holder.tvQuantidade.setText(VendaSelecionado.getQuantidade());
-        holder.tvValor_Total.setText(VendaSelecionado.getValorTotal());
+        holder.tvId_Vendas.setText(String.valueOf(vendaSelecionado.getId_vendas()));
+        holder.tvProdutos.setText(vendaSelecionado.getProduto());
+        holder.tvQuantidade.setText(vendaSelecionado.getQuantidade());
+        holder.tvValor_Total.setText((int) vendaSelecionado.getValor_total());
     }
 
     @Override
