@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class SQLiteDataHelper extends SQLiteOpenHelper {
+public class   SQLiteDataHelper extends SQLiteOpenHelper {
 
 
         public SQLiteDataHelper(@Nullable Context context,
@@ -19,7 +19,8 @@ public class SQLiteDataHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        sqLiteDatabase.execSQL("CREATE TABLE VENDAS (ID_VENDAS INTEGER, PRODUTO VARCHAR(100), " +
+                "QUANTIDADE INTENGER, VALOR_TOTAL REAL)");
     }
 
     @Override
